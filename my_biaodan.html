@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>表单学习</title>
+</head>
+
+<body>
+    <div id="container" style="width:1000px">
+
+        <div id="header" style="background-color:#808080 ;">
+            <h1 style="margin-bottom:0;">表单学习</h1>
+        </div>
+        <div id="content" style="background-color:#C0C0C0;height:800px;width:1000px;float:left;">
+            <h2>文本域</h2>
+            <form>
+                First name: <input type="text" name="firstname"><br>
+                Last name: <input type="text" name="lastname">
+            </form>
+            <h2>密码</h2>
+            <form action="">
+                <input type="password" name="pwd">
+            </form>
+            <h2>单选按钮</h2>
+            <form action="">
+                <input type="radio" name="sex" value="male">男<br>
+                <input type="radio" name="sex" value="female">女
+            </form>
+            <h2>复选框</h2>
+            <form>
+                <input type="checkbox" name="vehicle" value="Bike">我喜欢自行车<br>
+                <input type="checkbox" name="vehicle" value="Car">我喜欢小汽车
+            </form>
+            <h2>提交按钮</h2>
+            <form name="input" action="html_form_action.php" method="get">
+                Username: <input type="text" name="user">
+                <input type="submit" value="Submit">
+            </form>
+            <h2>提交按钮的几种请求</h2>
+            <!-- 以下表单使用 GET 请求发送数据到当前的 URL，method 默认位 GET。 -->
+            <form>
+                <label>Name:
+                    <input name="submitted-name" autocomplete="name">
+                </label>
+                <button>Save</button>
+            </form>
+            <hr>
+            <!-- 以下表单使用 POST 请求发送数据到当前的 URL。 -->
+            <form method="post">
+                <label>Name:
+                    <input name="submitted-name" autocomplete="name">
+                </label>
+                <button>Save</button>
+            </form>
+            <hr>
+            <!-- 表单使用 fieldset, legend, 和 label 标签 -->
+            <form method="post">
+                <fieldset>
+                    <legend>Title</legend>
+                    <label><input type="radio" name="radio"> Select me</label>
+                </fieldset>
+            </form>
+            <hr>
+        </div>
+
+        <div id="footer" style="background-color:#808080;clear:both;text-align:center;">
+            hanhanmp</div>
+
+    </div>
+</body>
+
+</html>
